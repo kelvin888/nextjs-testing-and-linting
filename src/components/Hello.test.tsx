@@ -4,6 +4,5 @@ import { render, screen } from "@testing-library/react";
 it('renders "Hello World"', () => {
   render(<Hello />);
   const myElement = screen.getByText(/Hello World!/);
-  screen.debug();
   expect(myElement).toBeInTheDocument();
 });
